@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
-namespace Avalon
+namespace ModuleTracking
 {
     /// <summary>
     /// The interface for modules.
     /// </summary>
-    interface IModule
+    public interface IModule
     {
         /// <summary>
         /// Gets or sets the name.
@@ -17,7 +13,7 @@ namespace Avalon
         /// <value>
         /// The name.
         /// </value>
-        string Name { get; set; }
+        string Name { get; }
 
         /// <summary>
         /// Gets the user interface.
