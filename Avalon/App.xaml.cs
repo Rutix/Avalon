@@ -4,7 +4,9 @@ using System.ComponentModel.Composition.Hosting;
 using System.Configuration;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Windows;
+using ModuleTracking;
 
 namespace Avalon
 {
@@ -22,10 +24,11 @@ namespace Avalon
         {
             var mainWindow = new MainWindow();
 
-            var catalog = new AssemblyCatalog(this.GetType().Assembly);
+            var catalog = new AggregateCatalog(new DirectoryCatalog("."), new AssemblyCatalog(Assembly.GetExecutingAssembly()));
             var container = new CompositionContainer(catalog);
             var modules = container.GetExportedValues<IModule>();
 
+            mainWindow.DataContext = new MainWindowViewModel(modules);
             mainWindow.Show();
         }
     }
