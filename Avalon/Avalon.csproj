@@ -95,9 +95,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Module1\Module1.csproj">
-      <Project>{053664EF-65A5-408B-9ABB-F7FBCBE38C32}</Project>
-      <Name>Module1</Name>
+    <ProjectReference Include="..\Avalon.PortScan\Avalon.PortScan.csproj">
+      <Project>{955B5CB9-DBAF-4472-9FFC-67CCE830B67D}</Project>
+      <Name>Avalon.PortScan</Name>
     </ProjectReference>
     <ProjectReference Include="..\ModuleTracking\ModuleTracking.csproj">
       <Project>{6C7A2C01-DBEA-4BE2-B977-3E6364E26ED8}</Project>

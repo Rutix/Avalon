@@ -1,11 +1,11 @@
 ﻿<Window x:Class="Avalon.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="120*"/>
         </Grid.ColumnDefinitions>
         <ListBox x:Name="listBox" 
                  Grid.Column="0" 
