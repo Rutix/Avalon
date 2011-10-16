@@ -4,8 +4,8 @@
         Title="MainWindow" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="156.8" />
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ListBox x:Name="listBox" 
                  Grid.Column="0" 
