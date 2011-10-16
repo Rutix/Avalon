@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ModuleTracking")]
+[assembly: AssemblyTitle("Avalon.Common")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("ModuleTracking")]
+[assembly: AssemblyProduct("Avalon.Common")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ed55ef9d-2faa-4577-8534-e2cce9ee0854")]
+[assembly: Guid("1539342d-1e89-438b-bae4-58f0ee6b10eb")]
 
 // Version information for an assembly consists of the following four values:
 //

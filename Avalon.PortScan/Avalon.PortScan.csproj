@@ -52,16 +52,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModuleTracking\ModuleTracking.csproj">
-      <Project>{6C7A2C01-DBEA-4BE2-B977-3E6364E26ED8}</Project>
-      <Name>ModuleTracking</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="PortScanView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Avalon.Common\Avalon.Common.csproj">
+      <Project>{0DE67F60-B51E-4DB6-BF83-1B32EBB05324}</Project>
+      <Name>Avalon.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

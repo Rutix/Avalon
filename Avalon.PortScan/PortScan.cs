@@ -4,7 +4,7 @@ using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 using System.Windows.Controls;
-using ModuleTracking;
+using Avalon.Common;
 
 namespace AvalonPortScan
 {
