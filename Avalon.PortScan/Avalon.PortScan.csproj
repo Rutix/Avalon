@@ -50,6 +50,7 @@
     <Compile Include="PortScanView.xaml.cs">
       <DependentUpon>PortScanView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PortScanViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
