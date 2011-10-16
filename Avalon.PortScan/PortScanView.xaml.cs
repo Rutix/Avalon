@@ -23,5 +23,10 @@ namespace AvalonPortScan
         {
             InitializeComponent();
         }
+
+        private void ScanClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
