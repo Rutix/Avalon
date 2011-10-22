@@ -6,7 +6,7 @@ using Avalon.Common;
 
 namespace Avalon
 {
-    class MainWindowViewModel : ViewModelBase
+    public class MainWindowViewModel : ViewModelBase
     {
         #region Variables
 
