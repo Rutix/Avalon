@@ -31,3 +31,6 @@ _ReSharper*/
 #Subversion files
 .svn
 .git
+
+#Nuget packages
+packages/*
