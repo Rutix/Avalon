@@ -6,7 +6,7 @@ using Avalon.Common;
 
 namespace Avalon
 {
-    class MainWindowViewModel : INotifyPropertyChanged
+    class MainWindowViewModel : ViewModelBase
     {
         #region Variables
 
@@ -35,8 +35,8 @@ namespace Avalon
                 if (value != _selectedModule)
                 {
                     _selectedModule = value;
-                    RaisePropertyChanged("SelectedModule");
-                    RaisePropertyChanged("UserInterface");
+                    OnPropertyChanged("SelectedModule");
+                    OnPropertyChanged("UserInterface");
                 }
                 _selectedModule = value;
             }
@@ -66,27 +66,6 @@ namespace Avalon
             }
 
         }
-
-        /// <summary>
-        /// Raises the changed property.
-        /// </summary>
-        /// <param name="propertyName">Name of the property.</param>
-        private void RaisePropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        } 
-        #endregion
-
-        #region Events
-
-        /// <summary>
-        /// Occurs when a property value changes.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged; 
-        
         #endregion
     }
 }
