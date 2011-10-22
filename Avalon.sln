@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalon.PortScan", "Avalon.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalon.Common", "Avalon.Common\Avalon.Common.csproj", "{0DE67F60-B51E-4DB6-BF83-1B32EBB05324}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalon.Tests", "Avalon.Tests\Avalon.Tests.csproj", "{CFC9D465-3ABD-485A-9110-9CA37694E342}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{0DE67F60-B51E-4DB6-BF83-1B32EBB05324}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{0DE67F60-B51E-4DB6-BF83-1B32EBB05324}.Release|Win32.ActiveCfg = Release|Any CPU
 		{0DE67F60-B51E-4DB6-BF83-1B32EBB05324}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Release|Win32.ActiveCfg = Release|Any CPU
+		{CFC9D465-3ABD-485A-9110-9CA37694E342}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
