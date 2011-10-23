@@ -43,7 +43,7 @@ namespace Avalon.Tests
         {
             protected override bool ThrowOnInvalidPropertyName
             {
-                get { return false; }
+                get { return true; }
             }
 
             public string GoodProperty
