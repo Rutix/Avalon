@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Avalon.Common;
+using Avalon.Common.ViewModel;
 using NUnit.Framework;
 
-namespace Avalon.Tests
+namespace Avalon.Tests.Avalon.Common
 {
     [TestFixture]
     class ViewModelBaseTest
