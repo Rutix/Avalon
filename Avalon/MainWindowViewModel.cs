@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows.Controls;
 using Avalon.Common;
+using Avalon.Common.ViewModel;
 using Avalon.Properties;
 
 namespace Avalon
@@ -9,7 +10,7 @@ namespace Avalon
     /// <summary>
     /// The application's main window ViewModel.
     /// </summary>
-    public class MainWindowViewModel : ViewModelBase
+    public class MainWindowViewModel : ModuleViewModel
     {
         #region Fields
 

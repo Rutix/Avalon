@@ -1,7 +1,9 @@
-﻿using System.ComponentModel.Composition.Hosting;
+﻿using System;
+using System.ComponentModel.Composition.Hosting;
 using System.Reflection;
 using System.Windows;
 using Avalon.Common;
+using Avalon.Common.ViewModel;
 
 namespace Avalon
 {
@@ -23,7 +25,19 @@ namespace Avalon
             var container = new CompositionContainer(catalog);
             var modules = container.GetExportedValues<IModule>();
 
-            mainWindow.DataContext = new MainWindowViewModel(modules);
+            var viewModel = new MainWindowViewModel(modules);
+
+            //close stuff
+            EventHandler handler = null;
+            handler = delegate
+                          {
+                              viewModel.RequestClose -= handler;
+                              mainWindow.Close();
+
+                          };
+            viewModel.RequestClose += handler;
+
+            mainWindow.DataContext = viewModel;
             mainWindow.Show();
         }
     }
