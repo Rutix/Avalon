@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 
-namespace Avalon.Common
+namespace Avalon.Common.ViewModel
 {
     /// <summary>
     /// Base class for all ViewModel classes in the application.

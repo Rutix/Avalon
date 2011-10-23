@@ -48,7 +48,8 @@
     <Compile Include="IModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyOf.cs" />
-    <Compile Include="ViewModelBase.cs" />
+    <Compile Include="ViewModel\ModuleViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
