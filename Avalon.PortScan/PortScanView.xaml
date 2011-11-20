@@ -3,22 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:AvalonPortScan="clr-namespace:AvalonPortScan"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="450" 
 >
+    <UserControl.DataContext>
+        <AvalonPortScan:PortScanViewModel/>
+    </UserControl.DataContext>
     <DockPanel>
         <GroupBox DockPanel.Dock="Top" Header="ScanParamters" Height="72" Margin="8,0,8,0" VerticalAlignment="Top">
             <Grid>
-                <TextBox Name="hostInput" TextWrapping="Wrap" Text="127.0.0.0" RenderTransformOrigin="0.472,0.41" VerticalAlignment="Top" Margin="16,5,0,0" HorizontalAlignment="Left" Width="106"/>
-                <TextBox Name="startPortInput" TextWrapping="Wrap" Text="0" RenderTransformOrigin="0.472,0.41" VerticalAlignment="Top" Margin="134,5,0,0" HorizontalAlignment="Left" Width="74"/>
-                <TextBox Name="endPortInput" TextWrapping="Wrap" Text="100" RenderTransformOrigin="0.472,0.41" VerticalAlignment="Top" Margin="231,6,0,0" HorizontalAlignment="Left" Width="74"/>
+                <TextBox Name="hostInput" TextWrapping="Wrap" Text="{Binding Path=PortScanModel.HostAddress}" RenderTransformOrigin="0.472,0.41" VerticalAlignment="Top" Margin="16,5,0,0" HorizontalAlignment="Left" Width="106"/>
+                <TextBox Name="startPortInput" TextWrapping="Wrap" Text="{Binding Path=PortScanModel.StartPort}" RenderTransformOrigin="0.472,0.41" VerticalAlignment="Top" Margin="134,5,0,0" HorizontalAlignment="Left" Width="74"/>
+                <TextBox Name="endPortInput" TextWrapping="Wrap" Text="{Binding Path=PortScanModel.EndPort}" RenderTransformOrigin="0.472,0.41" VerticalAlignment="Top" Margin="231,6,0,0" HorizontalAlignment="Left" Width="74"/>
                 <Button x:Name="scanButton"
                         Content="Scan"
                         VerticalAlignment="Top" 
                         Margin="0,5,23,0" 
                         HorizontalAlignment="Right" 
                         Width="75"
-                        Click="ScanClick">
+                        Command="{Binding ScanCommand}" CommandParameter="{Binding}">
                 </Button>
                 <Label Content="IP/Host address" Name="hostLabel" Margin="16,0,0,0"  VerticalAlignment="Bottom" HorizontalAlignment="Left" />
                 <Label Content="Start Port" Name="startPortLabel" Margin="134,0,195,0" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
@@ -26,7 +30,7 @@
             </Grid>
         </GroupBox>
         <GroupBox DockPanel.Dock="Bottom" Header="Result" Margin="8,0,8,0" Height="Auto">
-            <TextBox Name="resultTextBox" IsReadOnly="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+            <TextBox Name="resultTextBox" IsReadOnly="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Text="{Binding DisplayMessage}"/>
         </GroupBox>
     </DockPanel>
     <!--<Grid>
