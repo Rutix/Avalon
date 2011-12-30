@@ -26,6 +26,7 @@ Thumbs.db
 obj/
 [Rr]elease*/
 _ReSharper*/
+*Resharper
 [Tt]est[Rr]esult*
 
 #Subversion files
