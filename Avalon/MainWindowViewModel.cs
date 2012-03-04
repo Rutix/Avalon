@@ -57,8 +57,8 @@ namespace Avalon
                 if (value != _selectedModule)
                 {
                     _selectedModule = value;
-                    OnPropertyChanged("SelectedModule");
-                    OnPropertyChanged("UserInterface");
+                    OnPropertyChanged(PropertyOf<MainWindowViewModel>.Resolve(x => x.SelectedModule));
+                    OnPropertyChanged(PropertyOf<MainWindowViewModel>.Resolve(x => x.UserInterface));
                 }
                 _selectedModule = value;
             }
